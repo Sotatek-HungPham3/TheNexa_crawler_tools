@@ -42,9 +42,9 @@ try:
             for withdraw in withdraws:
                 withdraw_count +=1
                 print(f'Withdraw count {withdraw_count}')
-                with open('withdraw_13.json', 'a') as f:
-                    json.dump(withdraw, f, ensure_ascii=False)
-                    f.write('\n')
+                # with open('withdraw_13.json', 'a') as f:
+                #     json.dump(withdraw, f, ensure_ascii=False)
+                #     f.write('\n')
                 withdraw_data = (
                     30, # fake user id for user has more than 13K
                     withdraw["type"],

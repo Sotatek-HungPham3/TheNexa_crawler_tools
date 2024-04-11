@@ -58,9 +58,9 @@ while has_more:
             print(f'Order count {order_count}')
             # get order detail
             order_detail = upbit.get_order(order['uuid'])
-            with open('order_list.json', 'a') as f:
-                json.dump(order_detail, f, ensure_ascii=False)
-                f.write('\n')
+            # with open('order_list.json', 'a') as f:
+            #     json.dump(order_detail, f, ensure_ascii=False)
+            #     f.write('\n')
             is_has_trade = True
             if not order_detail['trades']:
                 is_has_trade = False

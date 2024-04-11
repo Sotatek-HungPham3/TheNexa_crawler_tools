@@ -44,9 +44,9 @@ try:
                 print(deposit)
                 deposit_count +=1
                 print(f'Deposit count {deposit_count}')
-                with open('deposit_13.json', 'a') as f:
-                    json.dump(deposit, f, ensure_ascii=False)
-                    f.write('\n')
+                # with open('deposit_13.json', 'a') as f:
+                #     json.dump(deposit, f, ensure_ascii=False)
+                #     f.write('\n')
                 deposit_data = (
                     13, # fake user id for user has more than 13K
                     deposit["type"],
