@@ -35,6 +35,7 @@ try:
         has_more = True
         while has_more:
             deposits = get_all_deposit(state=state, page=page)
+            print(deposits)
             # Check if there are any deposit on this page
             if not deposits:
                 has_more = False
