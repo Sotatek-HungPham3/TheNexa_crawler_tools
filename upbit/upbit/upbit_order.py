@@ -7,8 +7,8 @@ import json
 
 from upbit_order_list import get_all_order
 
-access_key = "2LAnWbMNmcxobMk9tZqWOuaxKbRtC2nr9hRG0uHk"
-secret_key = "VanvxQMggLVeXM3kgyH7T6vL0gFDZ4xb423xxt3y"
+access_key = "nHPmoSxSQuyxAvnkx7x3fgWB3VQJcQ0Rz31pEiZx"
+secret_key = "U7ihxL0s4JtuIM4eYGfRQ1Yvrm1XQcL9yUnix2CP"
 upbit = pyupbit.Upbit(access_key, secret_key)
 
 # MySQL database connection details (replace with yours)
@@ -22,13 +22,13 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 sql_insert_order = """
-INSERT INTO upbit_orders (uuid, user_id, side, ord_type, price, state, market, created_at, volume, 
+INSERT INTO upbit_orders_testing (uuid, user_id, side, ord_type, price, state, market, created_at, volume, 
 remaining_volume, reserved_fee, remaining_fee, paid_fee, locked, executed_volume, trades_count, is_has_trade)
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
 
 sql_insert_transaction = """
-INSERT INTO upbit_transactions (order_uuid, user_id, uuid, market, price, volume, fee, funds, created_at, side)
+INSERT INTO upbit_transactions_testing (order_uuid, user_id, uuid, market, price, volume, fee, funds, created_at, side)
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
 

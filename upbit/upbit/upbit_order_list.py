@@ -6,8 +6,8 @@ import requests
 import uuid
 from urllib.parse import urlencode, unquote
 
-access_key = "2LAnWbMNmcxobMk9tZqWOuaxKbRtC2nr9hRG0uHk"
-secret_key = "VanvxQMggLVeXM3kgyH7T6vL0gFDZ4xb423xxt3y"
+access_key = "nHPmoSxSQuyxAvnkx7x3fgWB3VQJcQ0Rz31pEiZx"
+secret_key = "U7ihxL0s4JtuIM4eYGfRQ1Yvrm1XQcL9yUnix2CP"
 server_url = 'https://api.upbit.com'
 
 

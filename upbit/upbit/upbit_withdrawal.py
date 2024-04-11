@@ -9,16 +9,16 @@ from upbit_withdrawal_list import get_all_withdrawal
 
 # MySQL database connection details (replace with yours)
 mydb = mysql.connector.connect(
-    host="127.0.0.1",
-    port="3307",
-    user="crawler",
-    password="1",
-    database="crawler"
+    host="uat-taas-seoul.crc4caaeourk.ap-northeast-2.rds.amazonaws.com",
+    port="3306",
+    user="uat_taas",
+    password="dev",
+    database="hVs52Unvf99p933V"
 )
 mycursor = mydb.cursor()
 
 sql_insert_withdraw = """
-INSERT INTO upbit_withdraws (user_id, type, uuid, currency, net_type, txid, state, created_at, done_at, 
+INSERT INTO upbit_withdraws_testing (user_id, type, uuid, currency, net_type, txid, state, created_at, done_at, 
 amount, fee, transaction_type)
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
