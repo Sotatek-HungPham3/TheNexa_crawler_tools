@@ -1,3 +1,5 @@
+import json
+
 import jwt
 import hashlib
 import requests
@@ -39,6 +41,7 @@ def get_all_deposit(state='ACCEPTED', page=1, limit=100):
     }
     try:
         deposits = requests.get(server_url + '/v1/deposits', params=params, headers=headers)
+        print(json.dumps(deposits))
         return deposits.json()
     except Exception as x:
         print(x)
