@@ -11,9 +11,9 @@ from upbit_deposit_list import get_all_deposit
 mydb = mysql.connector.connect(
     host="uat-taas-seoul.crc4caaeourk.ap-northeast-2.rds.amazonaws.com",
     port="3306",
-    user="uat_taas",
-    password="dev",
-    database="hVs52Unvf99p933V"
+    user="dev",
+    password="hVs52Unvf99p933V",
+    database="uat_taas"
 )
 mycursor = mydb.cursor()
 

@@ -13,11 +13,11 @@ upbit = pyupbit.Upbit(access_key, secret_key)
 
 # MySQL database connection details (replace with yours)
 mydb = mysql.connector.connect(
-    host="127.0.0.1",
-    port="3307",
-    user="crawler",
-    password="1",
-    database="crawler"
+    host="uat-taas-seoul.crc4caaeourk.ap-northeast-2.rds.amazonaws.com",
+    port="3306",
+    user="dev",
+    password="hVs52Unvf99p933V",
+    database="uat_taas"
 )
 mycursor = mydb.cursor()
 
